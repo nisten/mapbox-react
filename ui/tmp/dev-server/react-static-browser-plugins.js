@@ -3,7 +3,7 @@
 
 // Plugins
 const plugins = [{
-  location: "/Users/jag/work/mapbox-react",
+  location: "/Users/jag/work/mapbox-react/ui",
   plugins: [],
   hooks: {}
 }]
