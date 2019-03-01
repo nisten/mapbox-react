@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{44:function(e,t,a){"use strict";a.r(t);var n=a(1),i=a.n(n),c=a(119),s=Object(c.a)({accessToken:"pk.eyJ1IjoiYWxleDMxNjUiLCJhIjoiY2o0MHp2cGtiMGFrajMycG5nbzBuY2pjaiJ9.QDApU0XH2v35viSwQuln5w"}),o={height:"80vh",width:"80vw"};t.default=function(){return i.a.createElement("div",null,i.a.createElement("p",null,"React Static is a progressive static site generator for React."),i.a.createElement(s,{style:"mapbox://styles/mapbox/streets-v9",containerStyle:o}))}}}]);
+//# sourceMappingURL=src-pages-about.5cdedf44.js.map
