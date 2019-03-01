@@ -3451,9 +3451,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_mapbox_gl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(32);
-/* harmony import */ var react_mapbox_gl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_mapbox_gl__WEBPACK_IMPORTED_MODULE_1__);
-var accessToken="pk.eyJ1IjoiYWxleDMxNjUiLCJhIjoiY2o0MHp2cGtiMGFrajMycG5nbzBuY2pjaiJ9.QDApU0XH2v35viSwQuln5w";var style="mapbox://styles/mapbox/streets-v9";var Map=react_mapbox_gl__WEBPACK_IMPORTED_MODULE_1___default()({accessToken:accessToken});var mapStyle={height:'80vh',width:'80vw'};/* harmony default export */ __webpack_exports__["default"] = (function(){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",null,react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p",null,"React Static is a progressive static site generator for React."),react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Map,{style:style,containerStyle:mapStyle}));});
+/* harmony default export */ __webpack_exports__["default"] = (function(){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",null,react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p",null,"React Static is a progressive static site generator for React."));});
 
 /***/ }),
 /* 29 */
@@ -3493,13 +3491,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
 /* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_static__WEBPACK_IMPORTED_MODULE_1__["withSiteData"])(function(){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{style:{textAlign:'center'}},react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1",null,"Welcome to React-Static"));}));
+/* harmony import */ var react_map_gl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(32);
+/* harmony import */ var react_map_gl__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_map_gl__WEBPACK_IMPORTED_MODULE_2__);
+var accessToken="pk.eyJ1IjoibmlzdGVuIiwiYSI6ImNqcnlieXd0MjB3bjk0M25yb280Nm9kczQifQ.N3Fa7L770MHqp-AV3f9hoA";var mapColor="mapbox://styles/mapbox/streets-v11";var Map=react_map_gl__WEBPACK_IMPORTED_MODULE_2___default()({accessToken:accessToken});var mapStyle={height:'700px',width:'850px'};/* harmony default export */ __webpack_exports__["default"] = (Object(react_static__WEBPACK_IMPORTED_MODULE_1__["withSiteData"])(function(){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{style:{textAlign:'center'}},react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1",null,"Welcome to React-Static"),react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Map,{style:mapColor,containerStyle:mapStyle,latitude:-79.3904,longitude:43.7221,zoom:2}));}));
 
 /***/ }),
 /* 32 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-mapbox-gl");
+module.exports = require("react-map-gl");
 
 /***/ }),
 /* 33 */
@@ -7171,7 +7171,7 @@ var router_ = __webpack_require__(7);
 var app = __webpack_require__(56);
 
 // CONCATENATED MODULE: /Users/jag/work/mapbox-react/ui/src/App.js
-function App(){return external_react_default.a.createElement(lib["Root"],null,external_react_default.a.createElement("nav",null,external_react_default.a.createElement(router_["Link"],{to:"/"},"Home"),external_react_default.a.createElement(router_["Link"],{to:"/about"},"About"),external_react_default.a.createElement(router_["Link"],{to:"/blog"},"Blog")),external_react_default.a.createElement("div",{className:"content"},external_react_default.a.createElement(lib["Routes"],null)));}/* harmony default export */ var src_App = (App);
+function App(){return external_react_default.a.createElement(lib["Root"],null,external_react_default.a.createElement("nav",null,external_react_default.a.createElement(router_["Link"],{to:"/"},"Home"),external_react_default.a.createElement(router_["Link"],{to:"/map"},"Map"),external_react_default.a.createElement(router_["Link"],{to:"/blog"},"Blog")),external_react_default.a.createElement("div",{className:"content"},external_react_default.a.createElement(lib["Routes"],null)));}/* harmony default export */ var src_App = (App);
 // CONCATENATED MODULE: /Users/jag/work/mapbox-react/ui/src/index.js
 // Your top level component
 // Export your top level component as JSX (for static rendering)
@@ -7183,4 +7183,4 @@ if(false){}}
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.a589c5dc.js.map
+//# sourceMappingURL=static.ffcf1848.js.map
