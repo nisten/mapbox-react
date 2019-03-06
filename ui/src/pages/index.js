@@ -1,29 +1,15 @@
 import React from 'react'
 import { withSiteData } from 'react-static'
-import StaticMap from 'react-map-gl'
+import Form from '../containers/Form.js'
 
-const accessToken = "pk.eyJ1IjoibmlzdGVuIiwiYSI6ImNqcnlieXd0MjB3bjk0M25yb280Nm9kczQifQ.N3Fa7L770MHqp-AV3f9hoA";
-const mapColor = "mapbox://styles/mapbox/streets-v11";
+const mapToken = 'pk.eyJ1IjoibmlzdGVuIiwiYSI6ImNqcnlieXd0MjB3bjk0M25yb280Nm9kczQifQ.N3Fa7L770MHqp-AV3f9hoA'
+const ipCoordinates = '-79.3623,43.6776'
 
-const Map = StaticMap({
-  accessToken
-});
-
-const mapStyle = {
-  height: '700px',
-  width: '850px',
-};
 
 export default withSiteData(() => (
   <div style={{ textAlign: 'center' }}>
     <h1>Welcome to React-Static</h1>
-    
-    <Map
-        style={mapColor}
-        containerStyle={mapStyle} 
-        latitude={-79.3904}
-        longitude={43.7221}
-        zoom={2} />
+    <Form />
+    <img src={`https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/${ipCoordinates},10,0,30/600x600@2x?access_token=${mapToken}`} />
   </div>
-  
 ))
