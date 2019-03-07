@@ -8,7 +8,7 @@ const ipCoordinates = '-79.3623,43.6776'
 
 export default withSiteData(() => (
   <div style={{ textAlign: 'center' }}>
-    <h1>Welcome to React-Static</h1>
+    <h1>IP Locator with static rendering</h1>
     <Form />
     <img src={`https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/${ipCoordinates},10,0,30/600x600@2x?access_token=${mapToken}`} />
   </div>
